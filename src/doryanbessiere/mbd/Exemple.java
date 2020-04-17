@@ -24,7 +24,7 @@ public class Exemple {
 		GithubAPI.getCacheDirectory().mkdirs();
 
 		// initialize GitHub access (with a token API)
-		GithubAPI githubAPI = new GithubAPI("DoryanBessiere", "d4a85787946bfde4d2f28d83621d8032936cddfa");
+		GithubAPI githubAPI = new GithubAPI("DoryanBessiere", "MyTokenAPI");
 		try {
 			githubAPI.download(GithubAPI.getCacheDirectory(), "MyProjectGithub", new DownloadInfo() {
 				@Override
