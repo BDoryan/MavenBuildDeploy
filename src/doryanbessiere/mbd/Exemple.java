@@ -47,7 +47,7 @@ public class Exemple {
 						MavenBuilderAPI build = new MavenBuilderAPI(unzip_directory);
 						try {
 							// starting the build (if return true=success, false=failed)
-							if (build.build("package", "compile", "-U")) {
+							if (build.build(null, "package", "compile", "-U")) {
 								System.out.println("Build success :D");
 								// Upload the production here
 								File latest_directory = new File("/var/www/html/production/");
