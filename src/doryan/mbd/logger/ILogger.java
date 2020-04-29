@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.logger;
+package doryan.mbd.logger;
 
 public interface ILogger {
 

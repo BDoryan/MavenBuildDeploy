@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.builder;
+package doryan.mbd.builder;
 
 public abstract class MavenLogs {
 

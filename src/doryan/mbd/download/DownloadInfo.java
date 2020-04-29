@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.download;
+package doryan.mbd.download;
 
 import java.io.File;
 

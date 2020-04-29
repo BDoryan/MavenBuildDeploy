@@ -1,4 +1,4 @@
-package doryanbessiere.mbd;
+package doryan.mbd;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -6,9 +6,9 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
-import doryanbessiere.mbd.builder.MavenBuilderAPI;
-import doryanbessiere.mbd.download.DownloadInfo;
-import doryanbessiere.mbd.github.GithubAPI;
+import doryan.mbd.builder.MavenBuilderAPI;
+import doryan.mbd.download.DownloadInfo;
+import doryan.mbd.github.GithubAPI;
 
 public class Exemple {
 

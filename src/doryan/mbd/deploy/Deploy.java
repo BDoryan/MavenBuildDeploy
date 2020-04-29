@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.deploy;
+package doryan.mbd.deploy;
 
 import java.io.File;
 

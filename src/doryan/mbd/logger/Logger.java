@@ -1,11 +1,11 @@
-package doryanbessiere.mbd.logger;
+package doryan.mbd.logger;
 
 import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-import doryanbessiere.mbd.logger.file.LoggerFile;
-import doryanbessiere.mbd.logger.listeners.LoggerListener;
+import doryan.mbd.logger.file.LoggerFile;
+import doryan.mbd.logger.listeners.LoggerListener;
 
 public class Logger implements ILogger {
 

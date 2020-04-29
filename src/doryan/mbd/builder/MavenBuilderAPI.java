@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.builder;
+package doryan.mbd.builder;
 
 import java.io.BufferedReader;
 import java.io.File;

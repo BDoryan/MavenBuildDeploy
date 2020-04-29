@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.github;
+package doryan.mbd.github;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,7 +16,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-import doryanbessiere.mbd.download.DownloadInfo;
+import doryan.mbd.download.DownloadInfo;
 
 public class GithubAPI {
 

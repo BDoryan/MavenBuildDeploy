@@ -1,4 +1,4 @@
-package doryanbessiere.mbd.logger.listeners;
+package doryan.mbd.logger.listeners;
 
 public interface LoggerListener {
 

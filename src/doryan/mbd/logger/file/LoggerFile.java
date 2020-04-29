@@ -1,11 +1,11 @@
-package doryanbessiere.mbd.logger.file;
+package doryan.mbd.logger.file;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
-import doryanbessiere.mbd.logger.listeners.LoggerListener;
+import doryan.mbd.logger.listeners.LoggerListener;
 
 public class LoggerFile implements LoggerListener {
 
