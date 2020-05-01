@@ -68,6 +68,46 @@ public class GithubAPI {
 		return true;
 	}
 
+	public boolean download(File destination, String project, String branch, DownloadInfo downloadInfo) throws IOException {
+		String url_string = "https://github.com/" + username + "/" + project + "/archive/"+branch+".zip";
+
+		File file = new File(destination, "master.zip");
+
+		if (file.exists()) {
+			file.delete();
+		}
+		file.getParentFile().mkdirs();
+		file.createNewFile();
+		HttpClient client = HttpClientBuilder.create().build();
+		HttpGet request = new HttpGet(url_string);
+		request.setHeader("Authorization", "token " + this.token);
+		HttpResponse response = client.execute(request);
+		HttpEntity entity = response.getEntity();
+
+		if (downloadInfo != null) {
+			downloadInfo.file = file;
+		}
+
+		InputStream is = entity.getContent();
+
+		FileOutputStream fos = new FileOutputStream(file);
+		if (downloadInfo != null)
+			downloadInfo.start();
+
+		int inByte;
+		while ((inByte = is.read()) != -1) {
+			fos.write(inByte);
+			if (downloadInfo != null)
+				downloadInfo.download();
+		}
+
+		is.close();
+		fos.close();
+		if (downloadInfo != null)
+			downloadInfo.finish();
+		return true;
+	}
+
 	public File unzip(File file) throws FileNotFoundException, IOException {
 		byte[] buffer = new byte[1024];
 
